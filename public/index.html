@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head> 
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <h1>Hello, I'm Swathi Nukala<span class="typing-effect" id="typing"></span></h1>
+    <p>Frontend & Backend Developer | Passionate about building interactive web applications</p>
+    <button onclick="sayHi()">Say Hi!</button>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1: Portfolio Website</h3>
+      <p>A simple responsive personal portfolio website.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2: Medibot using IOT device</h3>
+      <p>A personal assistant bot which helpful for patients .</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" rows="4" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email:<a href="swathisnukala@gmail.com" target="_blank">gmail.com/in/yourprofile</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/swathi-nukala-77775b310" target="_blank">linkedin.com/in/yourprofile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Swathi Nukala. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
